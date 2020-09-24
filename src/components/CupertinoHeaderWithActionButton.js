@@ -20,7 +20,6 @@ function CupertinoHeaderWithActionButton(props) {
             name={props.leftIcon || "ios-arrow-back"}
             style={styles.leftIcon}
           ></Icon>
-          <Text style={styles.leftText}>{props.leftText || "Back"}</Text>
         </TouchableOpacity>
       </View>
       <View
@@ -34,11 +33,6 @@ function CupertinoHeaderWithActionButton(props) {
         <Text numberOfLines={1} style={styles.title}>
           {props.title || "Title"}
         </Text>
-      </View>
-      <View style={styles.rightWrapper}>
-        <TouchableOpacity style={styles.rightIconButton}>
-          <Text style={styles.rightText}>{props.rightText || "Action"}</Text>
-        </TouchableOpacity>
       </View>
     </View>
   );
@@ -60,36 +54,24 @@ const styles = StyleSheet.create({
     flexDirection: "row"
   },
   leftIcon: {
-    color: "#007AFF",
+    color: "#000",
     fontSize: 32
-  },
-  leftText: {
-    fontSize: 17,
-    color: "#007AFF",
-    paddingLeft: 5,
-    alignSelf: "center"
   },
   textWrapper: {
     flex: 1,
-    alignItems: "center",
+    position: "absolute",
+    top: '30%',
+    right: '-15%',
     justifyContent: "center"
   },
   title: {
     fontSize: 17,
     lineHeight: 17,
-    color: "#000"
-  },
-  rightWrapper: {
-    flex: 1,
-    alignItems: "flex-end",
-    justifyContent: "center"
-  },
-  rightIconButton: {},
-  rightText: {
-    color: "#007AFF",
-    fontSize: 17,
+    color: "#000",
+    height: 30,
+    width: '100%',
     alignSelf: "center"
-  }
+  },
 });
 
 export default CupertinoHeaderWithActionButton;

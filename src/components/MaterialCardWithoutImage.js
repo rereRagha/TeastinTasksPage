@@ -61,13 +61,13 @@ const styles = StyleSheet.create({
   lblServiceName: {
     fontFamily: "roboto-regular",
     color: "rgba(88,88,88,1)",
-    marginLeft: 70,
+    marginLeft: 71,
     marginTop: 3
   },
   isRead: {
     color: "rgba(0,161,169,1)",
     fontSize: 20,
-    marginLeft: 37
+    marginLeft: '22%'
   },
   lblRequestNumberRow: {
     height: 22,
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     fontFamily: "roboto-regular",
     color: "rgba(175,175,175,1)",
     fontSize: 9,
-    marginLeft: 146,
+    marginLeft: '60%',
     marginTop: 3
   },
   btnApproveRow: {

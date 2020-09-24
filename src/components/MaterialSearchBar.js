@@ -26,7 +26,10 @@ function MaterialSearchBar(props) {
         <TouchableOpacity /* Conditional navigation not supported at the moment */
           style={styles.rightIconButton}
         >
-        
+          <MaterialCommunityIconsIcon
+            name="close"
+            style={styles.rightIcon}
+          ></MaterialCommunityIconsIcon>
         </TouchableOpacity>
       </View>
     </View>
@@ -35,30 +38,14 @@ function MaterialSearchBar(props) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#3F51B5",
-    
     padding: 4,
-    shadowColor: "#111",
-    shadowOffset: {
-      width: 0,
-      height: 2
-    },
-    shadowOpacity: 0.2,
-    shadowRadius: 1.2,
-    elevation: 3
   },
   rect1: {
     flexDirection: "row",
     alignItems: "center",
-    borderRadius: 2,
-    flex: 1,
-    marginBottom: 4,
-    marginTop: 4,
-    marginLeft: 4,
-    marginRight: 4
   },
   leftIconButton: {
-    padding: 11,
+    paddingTop: 11,
     marginTop: 1
   },
   leftIcon: {
@@ -80,15 +67,14 @@ const styles = StyleSheet.create({
   leftIconButtonRow: {
     height: 48,
     flexDirection: "row",
-    marginLeft: 5,
-    marginTop: 4
+    marginLeft: 2,
   },
   leftIconButtonRowFiller: {
     flex: 1,
     flexDirection: "row"
   },
   rightIconButton: {
-    padding: 11,
+    padding: 0,
     alignItems: "center",
     marginRight: 5,
     marginTop: 5

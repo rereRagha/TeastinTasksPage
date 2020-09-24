@@ -19,7 +19,7 @@ function Untitled(props) {
           leftIcon="ios-arrow-round-back"
           leftText=" "
           rightText=" "
-          title="Tasks"
+          title="Tasks jhdsgiufgujoidskj iohiufhgio"
           style={styles.headerBar}
         ></CupertinoHeaderWithActionButton>
         <MaterialSearchBar
@@ -48,50 +48,52 @@ function Untitled(props) {
           contentContainerStyle={styles.taskArea_contentContainerStyle}
         >
           <MaterialCardWithoutImage
-            style={styles.cardTask1}
+            style={styles.cardTask}
           ></MaterialCardWithoutImage>
           <MaterialCardWithoutImage
-            style={styles.cardTask2}
+            style={styles.cardTask}
           ></MaterialCardWithoutImage>
           <MaterialCardWithoutImage
-            style={styles.cardTask3}
+            style={styles.cardTask}
           ></MaterialCardWithoutImage>
           <MaterialCardWithoutImage
-            style={styles.cardTask4}
+            style={styles.cardTask}
           ></MaterialCardWithoutImage>
           <MaterialCardWithoutImage
-            style={styles.cardTask5}
+            style={styles.cardTask}
           ></MaterialCardWithoutImage>
           <MaterialCardWithoutImage
-            style={styles.cardTask6}
+            style={styles.cardTask}
           ></MaterialCardWithoutImage>
           <MaterialCardWithoutImage
-            style={styles.cardTask7}
+            style={styles.cardTask}
           ></MaterialCardWithoutImage>
           <MaterialCardWithoutImage
-            style={styles.cardTask8}
+            style={styles.cardTask}
           ></MaterialCardWithoutImage>
           <MaterialCardWithoutImage
-            style={styles.cardTask9}
+            style={styles.cardTask}
           ></MaterialCardWithoutImage>
           <MaterialCardWithoutImage
-            style={styles.cardTask10}
+            style={styles.cardTask}
           ></MaterialCardWithoutImage>
           <MaterialCardWithoutImage
-            style={styles.cardTask12}
+            style={styles.cardTask}
           ></MaterialCardWithoutImage>
           <MaterialCardWithoutImage
-            style={styles.cardTask11}
+            style={styles.cardTask}
           ></MaterialCardWithoutImage>
           <MaterialCardWithoutImage
-            style={styles.cardTask13}
+            style={styles.cardTask}
           ></MaterialCardWithoutImage>
+          <View style={styles.TextMoreView}>
           <TextInput
             placeholder="MORE"
             placeholderTextColor="rgba(0,161,169,1)"
             selectionColor="rgba(74,74,74,1)"
             style={styles.btnMoreTask}
           ></TextInput>
+          </View>
         </ScrollView>
       </View>
     </View>
@@ -103,47 +105,25 @@ const styles = StyleSheet.create({
     flex: 1
   },
   header: {
-    width: 375,
     height: 100,
     marginTop: 32
   },
   headerBar: {
     height: 44,
     backgroundColor: "rgba(15,15, 15,0)",
-    overflow: "visible"
+    overflow: "visible",
+    width: 344
   },
   searchBar: {
     height: 56,
-    width: 375,
-    backgroundColor: "rgba(15,15, 15,0)",
-    borderWidth: 0,
-    borderColor: "#000000",
-    shadowColor: "rgba(0,0,0,1)",
-    shadowOffset: {
-      width: 3,
-      height: 3
-    },
-    elevation: 5,
-    shadowOpacity: 0.1,
-    shadowRadius: 0
+    backgroundColor: "rgba(230, 230, 230,0)"
   },
   filters: {
-    width: 375,
-    height: 69,
-    marginTop: 4
+    height: 69
   },
   rect: {
-    width: 375,
     height: 69,
     backgroundColor: "rgba(230,230, 230,0)",
-    shadowColor: "rgba(0,0,0,1)",
-    shadowOffset: {
-      width: 3,
-      height: 3
-    },
-    elevation: 5,
-    shadowOpacity: 0.18,
-    shadowRadius: 0,
     flexDirection: "row"
   },
   filter: {
@@ -158,7 +138,7 @@ const styles = StyleSheet.create({
   },
   materialChipWithCloseButton: {
     height: 27,
-    width: 119,
+    width: 121,
     marginLeft: 10
   },
   icon: {
@@ -166,125 +146,47 @@ const styles = StyleSheet.create({
     fontSize: 20,
     height: 22,
     width: 20,
-    marginLeft: 12,
+    marginLeft: 50,
     marginTop: 3
   },
   filterRow: {
     height: 27,
     flexDirection: "row",
     flex: 1,
-    marginRight: 20,
+    marginRight: 5,
     marginLeft: 20,
     marginTop: 21
   },
   taskArea: {
-    width: 375,
-    height: 598,
-    marginTop: 9
+    height: '100%',
+    marginTop: 13,
+    alignItems: "center",
+    justifyContent: 'center'
   },
   taskArea_contentContainerStyle: {
-    height: 1725,
-    width: 375
+    height: 1950
   },
-  cardTask1: {
+  cardTask: {
     height: 113,
-    width: 327,
-    marginTop: 15,
-    alignSelf: "center"
+    width: '85%',
+    marginTop: 7.5,
+    marginBottom: 7.5,
+    marginLeft: '5%',
+    marginRight: '5%',
   },
-  cardTask2: {
-    height: 113,
-    width: 327,
-    marginTop: 17,
-    marginLeft: 24,
-    alignSelf: "center"
-  },
-  cardTask3: {
-    height: 113,
-    width: 327,
-    marginTop: 17,
-    marginLeft: 24,
-    alignSelf: "center"
-  },
-  cardTask4: {
-    height: 113,
-    width: 327,
-    marginTop: 17,
-    marginLeft: 24,
-    alignSelf: "center"
-  },
-  cardTask5: {
-    height: 113,
-    width: 327,
-    marginTop: 17,
-    marginLeft: 24,
-    alignSelf: "center"
-  },
-  cardTask6: {
-    height: 113,
-    width: 327,
-    marginTop: 17,
-    marginLeft: 24,
-    alignSelf: "center"
-  },
-  cardTask7: {
-    height: 113,
-    width: 327,
-    marginTop: 17,
-    marginLeft: 24,
-    alignSelf: "center"
-  },
-  cardTask8: {
-    height: 113,
-    width: 327,
-    marginTop: 17,
-    marginLeft: 24,
-    alignSelf: "center"
-  },
-  cardTask9: {
-    height: 113,
-    width: 327,
-    marginTop: 17,
-    marginLeft: 24,
-    alignSelf: "center"
-  },
-  cardTask10: {
-    height: 113,
-    width: 327,
-    marginTop: 17,
-    marginLeft: 24,
-    alignSelf: "center"
-  },
-  cardTask12: {
-    height: 113,
-    width: 327,
-    marginTop: 17,
-    marginLeft: 24,
-    alignSelf: "center"
-  },
-  cardTask11: {
-    height: 113,
-    width: 327,
-    marginTop: 17,
-    marginLeft: 24,
-    alignSelf: "center"
-  },
-  cardTask13: {
-    height: 113,
-    width: 327,
-    marginTop: 17,
-    marginLeft: 24,
-    alignSelf: "center"
+  TextMoreView: {
+    marginTop: 20,
+    width: '100%',
+    alignItems: "center",
+    justifyContent: 'center'
   },
   btnMoreTask: {
     fontFamily: "roboto-regular",
     color: "rgba(0,161,169,1)",
-    width: 53,
+    width: '100%',
     height: 17,
     fontSize: 16,
-    textAlign: "center",
-    marginTop: 20,
-    marginLeft: 161
+    textAlign: 'center'
   }
 });
 
