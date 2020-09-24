@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { StyleSheet, View, Text, ScrollView, TextInput } from "react-native";
-import CupertinoHeaderWithActionButton from "./src/components/CupertinoHeaderWithActionButton";
-import MaterialSearchBar from "./src/components/MaterialSearchBar";
-import MaterialChipWithCloseButton from "./src/components/MaterialChipWithCloseButton";
+import CupertinoHeaderWithActionButton from "../components/CupertinoHeaderWithActionButton";
+import MaterialSearchBar from "../components/MaterialSearchBar";
+import MaterialChipWithCloseButton from "../components/MaterialChipWithCloseButton";
 import Icon from "react-native-vector-icons/Entypo";
-import MaterialCardWithoutImage from "./src/components/MaterialCardWithoutImage";
+import MaterialCardWithoutImage from "../components/MaterialCardWithoutImage";
 
 function Untitled(props) {
   return (
@@ -121,7 +121,8 @@ const styles = StyleSheet.create({
     shadowColor: "rgba(0,0,0,1)",
     shadowOffset: {
       width: 3,
-      height: 3
+      height: 3,
+      
     },
     elevation: 5,
     shadowOpacity: 0.1,
@@ -147,7 +148,7 @@ const styles = StyleSheet.create({
     flexDirection: "row"
   },
   filter: {
-    fontFamily: "roboto-regular",
+    
     color: "#121212",
     marginTop: 5
   },
@@ -189,7 +190,8 @@ const styles = StyleSheet.create({
   cardTask1: {
     height: 113,
     width: 327,
-    marginTop: 15,
+    marginTop: 17,
+    marginLeft: 24,
     alignSelf: "center"
   },
   cardTask2: {
